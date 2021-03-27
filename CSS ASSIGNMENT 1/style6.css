@@ -1,0 +1,15 @@
+
+    th{
+        border: 1px solid green;
+        background-color: green;
+        color: white;
+    }
+
+    table ,  td{
+            border: 1px solid green;
+
+    }
+
+    div{
+        border: 1px solid black;
+    }

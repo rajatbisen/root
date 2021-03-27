@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+  }
+  
+  h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+      -30px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  #landing {
+    display: flex;
+    background: #fff;
+    
+  }
+  
+  #landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  #landing-text h2 {
+    color: #888;
+  }
+  #landing-text h2:hover {
+
+      background-color: crimson;
+      text-decoration: underline;
+      color: white;
+      display: inline-block;
+      border-radius: 3px;
+  }
+  
+  #landing-image {
+    background: url(landimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+  }
+  
+  .btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+  }
+  
+  .btn:hover {
+    background: #f4f4f4;
+    margin-top: 2.5rem;
+  }
+  
+  #header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+  }
+  
+  #header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .caption {
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: rgb(15, 1, 1);
+  text-decoration: underline;
+  background-color: rgb(209, 145, 145);
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-shadow: rgb(245, 244, 243) 2px 2px;
+}
+
+  
+  /* Screen Sizes 500px and Up */
+  @media (min-width: 500px) {
+    #landing {
+      display: flex;
+      height: 100%;
+    }
+  
+    #landing-text {
+      height: 100vh;
+    }
+  
+    #landing-image {
+      height: 100vh;
+    }
+  }
+  
+  /* Screen Sizes 700px and Up */
+  @media (min-width: 700px) {
+    .btn {
+      padding: 1rem 3rem;
+    }
+  }
+  
+  
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-19-7DRs5.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DRs5.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-1967DRs5.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-19G7DRs5.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-1927DRs5.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-19y7DRs5.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+
+
+
+
+  
