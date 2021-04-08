@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tempreature Measurement</title>
+    </head>
+    <body>
+        <form onsubmit="temperatureConverter()">
+        <label for="far">In Farhenheit:</label>
+        <input type="number" id="far" placeholder="Farhenheit Tempreature" required
+        oninput="tempreatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+        <br><br>
+
+        
+          <input type="submit" style="margin-left: 20px;"  onclick="temperatureConverter()"
+              >  
+             <input type="number" id="outputCelsius">
+            </form>
+          <script>
+               if(valNum == "")
+            {
+                alert("Fill Details");
+                return false;
+            }
+          function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+
+           
+          }
+          </script>
+    </body>
+</html>

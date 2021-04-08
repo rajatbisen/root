@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Astrick Print</title>
+    </head>
+    <body>
+        <h1>Assignment2</h1>
+        <input type="text" id="num">
+        <p id="pattern0"></p>
+        <p id="pattern1"></p>
+        <p id="pattern2"></p>
+        <button onclick="Assign2()">Click Here</button>
+    
+        <p id="pattern"></p>
+          <script>
+          function Assign2(){
+    number = document.getElementById('num').value
+    numbers = number.split(" ")
+    for(i = 0;i < numbers.length;i ++){
+        var num = numbers[i]
+        var pattern = ""
+        if(num % 1 != 0 || num == '' || num == ' '){
+            document.getElementById('pattern').innerHTML = "please enter number between 1-30"
+        }
+        else if(num < 1 || num > 30){
+            document.getElementById('pattern').innerHTML = "please enter number between 1-30"
+        }
+        else{
+            for(j = 0;j < num;j ++)
+            {    
+                pattern += '*'
+                document.getElementById('pattern' + i).innerHTML = pattern
+            }
+
+        }
+    }
+}   </script>
+    </body>
+</html>
